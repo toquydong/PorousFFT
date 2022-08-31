@@ -1,5 +1,4 @@
 # PorousFFT for conductivity
-Numerical homogenization for porous material using FFT method
 
 This is the source code for the case of circular pore in the paper
 
