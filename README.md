@@ -8,6 +8,7 @@ Homogenization is the procedure of finding the overall behavior of heterogeneous
 
 Most local problems are periodic and can be formulated as Lippmann Schwinger (LS) integral equations, which are then solved by iterations. In this case, the Fast Fourier Transform (FFT) techniques are useful due to the following reasons:
 - Operators in Lippmann Schwinger integral equations are convolution operators which have explicit form in Fourier space.
+- The FFT algorithm is robust
 - The problems are periodic and solving them on a regular grid is compatible with tomographic image input.
 
 However, it is known that LS-FFT schemes encounter convergence issues when it comes to the case of infinite contrast, i.e a constituent material which is much stiffer (more conductive) or much softer (less conductive) than the remaining constituent. This is the case of porous materials where the void has zero stiffness, zero conductivity and infinite hydraulic conductivity (saturated porous material).
