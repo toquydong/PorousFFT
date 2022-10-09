@@ -14,4 +14,4 @@ However, it is known that LS-FFT schemes encounter convergence issues when it co
 
 In this project, we propose different techniques to deal with infinite contrast issues. The main idea is to avoid finding solutions in the void phase and to reformulate the LS equations to find solutions in the remaining phase where the contrast is finite. As a result, in the new LS equations, the action of the void phase will be present as the distribution on the boundary, in addition to the volume distribution of the remaining phase. 
 
-Another interesting feature of the new LS equations is that they can be used to solve non periodic problems. This feature is important because a large number of boundary value problems are non periodic or partially periodic, for example, the case of infinite plate with PBC along x, y but non periodic along z.
+Another interesting feature of the new LS equations is that they can be used to solve non periodic problems. This feature is important because a large number of boundary value problems are non periodic or mixed, for example, the case of infinite plate with PBC along x, y but non periodic along z.
