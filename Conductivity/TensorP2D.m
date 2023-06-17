@@ -1,4 +1,5 @@
-function [R1,R2] = TensorR2D(L1,L2,Icou)
+
+function [P11,P22,P12] = TensorP2D(L1,L2,Icou)
 %
 Icou2=2*Icou;
 [ik1,ik2]=meshgrid(-Icou:Icou-1,-Icou:Icou-1);
@@ -15,15 +16,18 @@ k2=k2m./kb;
 k1(Icou+1,Icou+1)=0;
 k2(Icou+1,Icou+1)=0;
 
-R1=j*k1./kb;
-R2=j*k2./kb;
 
+P11=k1.^2;
+P12=k1.*k2;
+P22=k2.^2;
 
-R1(Icou+1,Icou+1)=0;
-R2(Icou+1,Icou+1)=0;
+P11(Icou+1,Icou+1)=0;
+P12(Icou+1,Icou+1)=0;
+P22(Icou+1,Icou+1)=0;
 
-R1(1,:)=0;
-R2(1,:)=0;
-R1(:,1)=0;
-R2(:,1)=0;
-
+P11(1,:)=0;
+P12(1,:)=0;
+P22(1,:)=0;
+P11(:,1)=0;
+P12(:,1)=0;
+P22(:,1)=0;

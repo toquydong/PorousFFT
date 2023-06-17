@@ -16,6 +16,8 @@ FI = 2*VI/V*besselj(1,eta)./eta.*exp(-j*(k1m.*C1+k2m.*C2));
 
 FI(Icou+1,Icou+1)=VI/V;
 SI = VI/V;
+FI(1,:)=0;
+FI(:,1)=0;
 end
 
 

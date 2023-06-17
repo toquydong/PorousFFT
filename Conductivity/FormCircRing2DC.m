@@ -27,6 +27,11 @@ eta = R*kb;
  FF1 = -2*pi*R*j/V*k1.*besselj(1,R*kb).*exp(-j*(k1m.*C1+k2m.*C2));
  FF2 = -2*pi*R*j/V*k2.*besselj(1,R*kb).*exp(-j*(k1m.*C1+k2m.*C2));
  FF = 2*pi*R/V.*besselj(0,R*kb).*exp(-j*(k1m.*C1+k2m.*C2));
-
+FF(1,:)=0;
+FF(:,1)=0;
+FF1(1,:)=0;
+FF1(:,1)=0;
+FF2(1,:)=0;
+FF2(:,1)=0;
 
 end
