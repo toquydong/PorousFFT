@@ -19,6 +19,9 @@ theta_ant=theta;
 ndstheta1 = -2*convfft2(nds1,theta_ant,'same'); 
 ndstheta2 = -2*convfft2(nds2,theta_ant,'same');
 
+ndstheta1 = symfft(ndstheta1);
+ndstheta2 = symfft(ndstheta2);
+
 en1 = j*theta_ant.*xi1 + E1*chin + ndstheta1;
 en2 = j*theta_ant.*xi2 + E2*chin + ndstheta2;
 

@@ -11,8 +11,6 @@ if (text == 'same')
     m2 = round((1+n)/2 + (m-1)/2); %(ly-1)/2+lx
     z=zfull(m1:m2,m1:m2);
 end
-z(1,:)=0;
-z(:,1)=0;
 
 
 
